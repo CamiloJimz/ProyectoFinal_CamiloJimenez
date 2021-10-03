@@ -1,0 +1,556 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+body{
+    background-color: rgb(31, 31, 31) ;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+:root{
+    scroll-behavior: smooth;
+}
+
+
+header{
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: rgba(31, 31, 31, 0.692);
+    position: fixed;
+    
+}
+
+
+a{
+    text-decoration: none;
+}
+
+/* NAVBAR RESPONSIVE */
+
+.checkbtn{
+    color: #fff;
+    font-size: 30px;
+    float: right;
+    line-height: 50px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+/* HASTA ACA */
+
+.navbar{
+    display: flex;
+    width: 82%;
+    justify-content: space-between;
+    padding: 20px;
+    
+    /* display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.5rem; */
+
+
+}
+
+
+
+.menu-link-desktop{
+    list-style: none;
+
+}
+
+
+.menu-link-desktop li{
+    min-height: 40px;
+    display: inline-block;
+    padding: 0 20px;
+
+}
+.menu-link-desktop li a{
+    color: white;
+    font-size: 30px;
+}
+
+/* BOTON CONTACTO */
+
+.cta-btn:hover{
+    transform: scale(.95);
+}
+
+.cta-btn{
+    font-weight: 700;
+    background-color: #c38b5f;
+    line-height: 40px;
+    min-height: 40px;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, .5);
+    transition: .4s all ease-in-out;
+}
+
+
+
+.links-menu:hover{
+    box-shadow: 0 5px 0 0 #c38b5f;
+    transition: all 0.8s;
+}
+
+
+
+
+/* HASTA ACA */
+
+.logotipo-responsive{
+    display: none;
+    
+}
+
+.logotipo > p{
+    color: #c38b5f;
+    font-size: 40px;
+    font-weight: bold;
+    /* margin-left: 9.5rem; */
+    padding-left: 100px;
+    border-left: 6px solid #c38b5f;
+
+}
+
+
+.logotipo :hover{
+    transform: scale(.95);
+
+}
+
+
+
+.image-hero{
+    max-width: 100%;
+    
+}
+
+
+.container{
+    /* margin: auto; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* text-align: left; */
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* margin-left: 20.5rem; */
+    /* width: 1150px;
+    height: 950px; */
+    text-align: justify;
+    padding: 50px;
+    width: 100%;
+   
+}
+
+.pre-sec1{
+    display: flex;
+    justify-content: center;
+}
+
+.seccion1{
+    /* margin: auto; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* text-align: left; */
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    text-align: justify;
+    /* padding-left: 20px; */
+    border-left: 6px solid #c38b5f;
+    padding: 0px 100px;
+    width: 80%;
+    
+
+}
+
+.title{
+    color: white;
+    font-size: 50px;
+    line-height: 55px;
+}
+
+.seccion1 h2{
+    font-weight: 400;
+    margin-bottom: 2rem;
+    color: #c38b5f;
+    width: 100%;
+}
+
+.second-title{
+    color: rgba(255, 255, 255, 0.726);
+    font-weight: 200;
+    font-size: 35px;
+    margin: 2rem 0 2rem 0;
+}
+
+.description{
+    color: white;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    font-size: 25px;
+    line-height: 200%;
+
+}
+
+.pre-skill{
+    display: flex;
+    justify-content: center;
+}
+
+.skills{
+    border-left: 6px solid #c38b5f;
+    margin-bottom: 10rem;
+    padding: 0px 100px;
+    width: 80%;
+    text-align: justify;
+    
+}
+.skills h4{
+    font-weight: 400;
+    margin-bottom: 2rem;
+    color: #c38b5f;
+    font-size: 50px;
+
+}
+
+.skills p{
+    color: white;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    font-size: 25px;
+}
+
+.pre-exp{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.experiencia{
+    border-left: 6px solid #c38b5f;
+    padding: 0px 100px;
+    width: 80%;
+    text-align: justify;
+    
+}
+
+/* .experiencialaboral{
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    min-height: 100px;
+    padding: 5px;
+} */
+
+.titulo-exp{
+    color: #c38b5f;
+    font-weight: 400;
+    font-size: 50px;
+    margin-bottom: 2rem;
+    
+}
+
+/* .experiencia h5{
+    font-weight: 400;
+    margin-bottom: 2rem;
+    color: #11dba9;
+    font-size: 50px;
+
+} */
+
+
+.experiencia span{
+    color: #c38b5f;
+    font-weight: 200;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.description-exp{
+    color: white;
+    font-weight: 400;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-size: 25px;
+    line-height: 200%;
+}
+
+
+
+/* CONTACTO */
+
+
+.pre-contacto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.small-contacto{
+    margin-top: 10rem;
+    border-left: 6px solid #c38b5f;
+    /* display: flex; */
+    text-align: justify;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: white;
+    padding: 0px 100px;
+    width: 80%;
+
+}
+
+
+.titulo-contacto h6{
+    font-weight: 400;
+    margin-bottom: 1rem;
+    color: #c38b5f;
+    font-size: 50px;
+    text-align: justify;
+
+}
+
+label{
+    font-size: 25px;
+    color: #c38b5f;
+
+}
+
+
+.small-contacto > p{
+    font-size: 25px;
+    margin-bottom: 2rem;
+}
+
+.formulario{
+    width: 100%;
+    min-height: 50px;
+    font-size: 20px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.formulario,textarea{
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 100%;
+
+}
+
+.textarea-msg{
+    min-height: 300px;
+    margin-bottom: 25px;
+}
+
+
+.small-contacto > .boton{
+    display: block;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+.boton{
+    font-weight: 700;
+    background-color: #c38b5f;
+    line-height: 40px;
+    height: 60px;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, .5);
+    transition: .4s all ease-in-out;
+    width: 150px;
+    font-size: 25px;
+
+}
+
+.boton:hover{
+    color: rgba(255, 255, 255, 0.671);
+    transform: scale(.95);
+}
+
+/* VALIDACIONES */
+
+.success{
+    border: 2px solid green!important;
+}
+
+.error{
+    border: 2px solid red!important;
+}
+
+
+/*
+footer */
+
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    width: 100%;
+    padding: 5px;
+
+}
+
+.rrss li{
+    text-decoration: none;
+    list-style: none;
+    display: inline-block;
+}
+
+.rrss li a{
+    font-size: 60px;
+    padding: 30px;
+    color: #c38b5f;
+}
+
+
+.rrss li a:hover{
+    box-shadow: 0 5px 0 0 #c38b5f;
+    
+}
+
+
+footer > p{
+    width: 80%;
+    padding: 5px;
+    margin-top: 10rem;
+    color: #c38b5f;
+    text-align: center;
+}
+
+
+
+@media only screen and (max-width: 1320px){
+  
+    .logotipo{
+        display: none;
+    }
+
+    .logotipo-responsive{
+        display: block;
+        color: #c38b5f;
+        font-size: 40px;
+        padding-left: 20px;
+        border-left: 6px solid #c38b5f;
+        position: relative;
+    }
+
+    
+    .menu-link-desktop li{
+        min-height: 40px;
+        display: block;
+        padding: 0 10px;
+    
+    }
+
+
+    /* NAVBAR RESPONSIVE */
+
+    .checkbtn{
+        display: block;
+    }
+
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(31, 31, 31);
+        top: 100px;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a{
+        font-size: 20px;
+    }
+
+    li a:hover, li.active{
+        background: none;
+        color:#c38b5f;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+    }
+
+
+    /* FIN NAVBAR RESPONSIVE */
+
+
+    .banner{
+        display: none;
+    }
+    
+    .seccion1{
+        padding: 0 20px;
+        
+    }
+
+    .seccion1 h2{
+        text-align: center;
+        margin-bottom: 4rem;
+        
+    }
+
+
+    .skills{
+        padding: 0 20px;
+    }
+
+    .skills h4{
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+
+    .experiencia{
+        padding: 0 20px;
+    }
+
+    .titulo-exp{
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+
+    .small-contacto{
+        padding: 0 20px;
+    }
+    
+    .titulo-contacto h6{
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+
+}   
